@@ -1,0 +1,16 @@
+.DS_Store
+
+# Directories
+node_modules
+.git
+
+# Config files
+#.babelrc
+#.editorconfig
+#.eslintignore
+#.eslintrc.js
+#.gitignore
+#.postcssrc.js
+#package-lock.json
+#package.json
+#.deployrc.js
