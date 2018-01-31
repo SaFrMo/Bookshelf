@@ -15,12 +15,12 @@ The main entry point for the app. Globally accessible with `app`.
 * `user` - [`User`](#user) object referencing the current user.
 
 ### `Book`
-A single book.
+A single book. Property names from the [schema.org Book schema](https://schema.org/Book).
 
 * `title` - String, display title
 * `author` - String, display author
 * `isbn` - Number, ISBN
-* `summary` - String, display summary
+* `description` - String, display summary
 * `series` - String, name of series
 * `links` - Array, list of [`Link`](#link)s for this book
 * `rating` - Number, stars (out of 5) given to this book by the User
