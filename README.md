@@ -15,37 +15,30 @@ The main entry point for the app. Globally accessible with `app`.
 * `user` - [`User`](#user) object referencing the current user.
 
 ### `Book`
-A single book. Property names from the [schema.org Book schema](https://schema.org/Book).
+A single book. Property names from [schema.org](https://schema.org/Book).
 
 * `title` - String, display title
 * `author` - String, display author
 * `isbn` - Number, ISBN
 * `description` - String, display summary
-* `series` - String, name of series
-* `links` - Array, list of [`Link`](#link)s for this book
 * `rating` - Number, stars (out of 5) given to this book by the User
 * `review` - String, User-created review
-
-### `Link`
-A link to an outside resource.
-
-* `text` - String, display text
-* `url` - String, URL
 
 ### `Shelf`
 Contains a list of books.
 
 * `name` - String, display name
 * `books` - Array, list of [`Book`](#book) objects this Shelf contains,
-* `owner` - [Link](#link) to User who owns this Shelf
+* `ownerUrl` - [Link](#link) to User who owns this Shelf
+* `url` - String, URL for this Shelf
 
 ### `User`
-Contains all information for a given user.
+Contains all information for a given user. Property names from [schema.org](https://schema.org/Person).
 
 * `name` - String, display name
 * `url` - String, `dat://` URL for this profile
-* `shelves` - Array, list of [`Shelf`](#shelf) objects this User owns
-* `follows` - Array, list of [`Link`](#link)s to Bookshelf profiles this User follows
+* `shelfUrls` - Array, list of [`Shelf`](#shelf) URLs this User owns
+* `followUrls` - Array, list of User URLs this User follows
 
 ## Build Setup
 
